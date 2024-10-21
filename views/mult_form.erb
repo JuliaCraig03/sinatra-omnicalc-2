@@ -1,5 +1,42 @@
-<h1>New multiplication</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target: Omnicalc 2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
 
-<form action="/">
+  <body>
+    <table style="width: 100%" border="1">
+      <tr>
+        <td>
+          <a href="/add">Add</a>
+        </td>
 
+        <td>
+          <a href="/subtract">Subtract</a>
+        </td>
+
+        <td>
+          <a href="/multiply">Multiply</a>
+        </td>
+
+        <td>
+          <a href="/divide">Divide</a>
+        </td>
+      </tr>
+    </table>
+    <h1>New multiplication</h1>
+
+<form action="/wizard_multiply">
+  <label for="first_field">Multiply this:</label>
+  <input type="text" id="first_field" name="first_num">
+
+  <label for="second_field">by this:</label>
+  <input type="text" id="second_field" name="second_num">
+
+  <button>Multiply!</button>
 </form>
+
+  </body>
+</html>
